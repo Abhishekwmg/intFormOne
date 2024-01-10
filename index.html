@@ -18,7 +18,8 @@
                 <div class="left-section">
                     <img src="./img/logo.png" alt="">
                     <h1 class="heading">We can't wait to hear from you!</h1>
-                    <p>Whether you have questions, want to discuss a project, or simply want to chat about design and
+                    <p class="para">Whether you have questions, want to discuss a project, or simply want to chat about
+                        design and
                         creativity, feel free to reach out. We're here to make your journey with 3-Dimensha as smooth
                         and enjoyable as possible. So drop us a message, and let's start the conversation today!</p>
                     <p class="view">View our work <span class="arrow-logo"><i
@@ -27,11 +28,11 @@
                 <div class="right-section">
                     <form>
                         <div class="step-one">
-                            <p>Step 1 of 3</p>
+                            <p>Step 1 of 2</p>
                             <div class="name">
                                 <label for="">Name *</label>
                                 <input type="text" placeholder="First Name" autocomplete="off">
-                                <input type="text" placeholder="Last Name" autocomplete="off">
+                                <input class="name-input" type="text" placeholder="Last Name" autocomplete="off">
                             </div>
                             <div class="email">
                                 <label for="">Email *</label>
@@ -48,42 +49,63 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="step-two hide">
-                            <p>Step 2 of 3</p>
-                            <div class="">
-                                <label for="">Country/Territory</label>
-                                <input type="text" placeholder="Country" autocomplete="off">
+                        <div class="step-one">
+                            <p>Step 2 of 2</p>
+                            <div class="company">
+                                <div>
+                                    <label>Country/Territory <span>*</span></label>
+                                    <input type="text" placeholder="Company Name" autocomplete="off">
+                                </div>
+                                <div>
+                                    <label for="">City <span>*</span></label>
+                                    <select class="city" name="city">
+                                        <option value="One">Select City</option>
+                                        <option value="One">Yes</option>
+                                        <option value="One">No</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="">
-                                <label for="">City</label>
-                                <input type="email" placeholder="Enter City" autocomplete="off">
+                            <div class="company">
+                                <div>
+                                    <label for="">Industry Segment <span>*</span></label>
+                                    <select class="city" name="city">
+                                        <option value="One">Select Segment</option>
+                                        <option value="One">Yes</option>
+                                        <option value="One">No</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="">Product Support <span>*</span></label>
+                                    <select class="city" name="city">
+                                        <option value="One">Select Product</option>
+                                        <option value="One">YES</option>
+                                        <option value="One">NO</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="">
-                                <label for="">Industry Segment</label>
-                                <input type="text" placeholder="Company Name" autocomplete="off">
+                            <div class="company">
+                                <div>
+                                    <label for="">Is this an urgent request? <span>*</span></label>
+                                    <select class="city" name="city">
+                                        <option value="One">Select</option>
+                                        <option value="One">YES</option>
+                                        <option value="One">NO</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="">
-                                <label for="">Product Support</label>
-                                <input type="number" placeholder="Enter Phone Number" autocomplete="off">
+                            <div class="company">
+                                <label class="comment">Comments</label>
+                            </div>
+                            <div class="textar">
+                                <textarea cols="30" rows="10" placeholder="Enter Comments"></textarea>
                             </div>
                         </div>
-                        <div class="step-three hide">
-                            <p>Step 3 of 3</p>
-                            <div class="">
-                                <label for="">Is this an urgent request?</label>
-                                <input type="text" placeholder="First Name" autocomplete="off">
-                            </div>
-                            <div class="">
-                                <textarea name="Comment" placeholder="Comment" id="" cols="55" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="submit">Next</button>
+                        <button type="submit" id="submit" class="submit">Next</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="./app/main.js"></script>
 </body>
-
 </html>

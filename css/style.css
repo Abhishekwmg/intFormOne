@@ -20,12 +20,15 @@ body{
 
 .inner-bg{
     background-color: #000000;
-    height: inherit;
+    min-height: 80%;
+    margin: 30px 70px;
+    border: 2px solid #80807f;
+    border-top-left-radius: 45px
+    
 }
 
 .inner-inner-bg{
     padding: 20px;
-    background-color: #000000;
     height: inherit;  
     display: flex;
 }
@@ -41,15 +44,33 @@ p{
 
 .left-section{
     max-width: 500px;
+    padding: 50px 40px;
 }
 
 .left-section img{
     width: 50px;
+    margin-bottom: 20px;
+}
+
+.left-section .view{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.left-section .view .arrow-logo{
+    margin-left: 10px;
 }
 
 .left-section .heading{
-    font-weight: 200;
+    font-weight: 400;
     word-spacing: 5px;
+}
+
+.left-section .para { 
+    font-weight: 300;
+    margin-top: 10px;
 }
 
 .left-section p{
@@ -72,14 +93,13 @@ p{
     margin-left: 50px;
 }
 
-.outer-bg .inner-bg .inner-inner-bg .right-section form { 
-
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one {
+    margin-top: 50px;
 }
 
 .outer-bg .inner-bg .inner-inner-bg .right-section form .step-one p{
-    padding: 15pxc;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -92,7 +112,7 @@ p{
 .outer-bg .inner-bg .inner-inner-bg .right-section form .step-one div > input{
     width: 45%;
     background-color: #000;
-    border: 2px solid #fff;
+    border: 2px solid #80807f;
     color: #fff;
     font-weight: 400;
     border-radius: 5px;
@@ -104,6 +124,20 @@ p{
     display: flex;
 }
 
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .company > div .city {
+    width: 90%;
+    background-color: #000;
+    border: 2px solid #80807f;
+    padding: 14px 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .company > div .city:hover{
+    border: 2px solid #fff;
+}
+
 .outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .company > div {
     width: 50%;
     margin: 0;
@@ -112,8 +146,116 @@ p{
 
 .outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .company > div input {
     width: 90%;
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .company > div input:hover{
+    border: 2px solid #fff;
 }
 
 .outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .email input{
-    width: 90%;
+    width: 95%;
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .email input:hover{
+    border: 2px solid #fff;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .name input {
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .name .name-input{
+    margin-left: 25px;
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .name input:hover{
+    border: 2px solid #fff;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .submit {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    margin-top: 25px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #80807f;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .submit:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .textar textarea {
+    padding: 10px;
+    width: 95%;
+    height: 100px;
+    background-color: #000;
+    border: 2px solid #80807f;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.2s ease-in    ;
+}
+
+.outer-bg .inner-bg .inner-inner-bg .right-section form .step-one .textar textarea:hover{
+    border: 2px solid #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-color: green;
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 480px){
+
+    .inner-bg{
+        margin: 30px 15px;
+    }
+
+    .inner-inner-bg{
+        flex-direction: column;
+    }
+
+    .left-section{
+        padding: 50px 5px;
+    }
+
+    .inner-inner-bg .right-section{
+        margin-left: 0 !important;
+    }
+
+    .step-one{
+        width: 100%;
+    }
+
 }
